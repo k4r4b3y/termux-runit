@@ -1,3 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
-exec echo "Hello anark, the time is $(date +"%Y-%m-%d %H:%M")" 2>&1
+exec ./every-five.sh 2>&1
