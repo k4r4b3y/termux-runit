@@ -40,23 +40,33 @@ directory.
 
 After that, create symbolic links to $SVDIR:
 
+```
 $ ln -s ${HOME}/.config/sv/testrunit ${PREFIX}/var/service/
 $ sv-enable testrunit
+```
 
 ## How to manage the service
 
 Check its status
 
+```
 $ sv status testrunit
+```
 
 Stop the service
 
+```
 $ sv stop testrunit
+```
 
 Start the service
 
+```
 $ sv start testrunit
+```
 
 Remove the service 
 
+```
 $ unlink ${PREFIX}/var/service/testrunit
+```
