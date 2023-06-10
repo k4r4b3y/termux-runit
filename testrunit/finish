@@ -1,0 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/sh
+
+echo Executing finish with arguments $@
+exec sleep 5
