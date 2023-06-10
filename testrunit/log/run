@@ -1,12 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/sh
-
-[ -r ../conf ] && . ../conf
-
-if [ "${LOGGING_ENABLE}x" = "1x" ]; then
-  # Create the log directory if not exists.
-  [ -d "${LOG_DIR}" ] || mkdir -p "${LOG_DIR}"
-
-  exec svlogd -tt "${LOG_DIR}"
-else
-  #
-fi
+svlogger="/data/data/com.termux/files/usr/share/termux-services/svlogger"
+exec "${svlogger}" "$@"
